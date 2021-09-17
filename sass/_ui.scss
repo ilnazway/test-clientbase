@@ -1,0 +1,130 @@
+.title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  color: $text-base;
+  &_size_s {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &_size_m {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &_size_l {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  &_size_xl {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  &_size_xxl {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  &_theme_sidebar {
+    font-family: "Open Sans";
+    font-weight: 600;
+    line-height: 22px;
+  }
+  &_theme_table {
+    font-weight: 400;
+    line-height: 19px;
+  }
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $text;
+  margin: 0;
+  &_size_s {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &_size_m {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &_size_l {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &_size_xl {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  &_type_title {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $text-base;
+  }
+  &_type_dedicated {
+    color: $base-red;
+  }
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: $base-red;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0 5px 0 5px;
+  box-sizing: border-box;
+  &_theme_empty {
+    background: inherit;
+    border: 1px solid $base-red;
+    color: $base-red;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-desc {
+  margin: 0;
+  &__elem {
+    margin: 0;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  &_active {
+    color: $base-red;
+  }
+}
+
+.line {
+  background: $light-gray;
+  height: 1px;
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+
+.input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  line-height: 22px;
+  &:focus {
+    outline: none;
+  }
+  &_type_field {
+    border: 1px solid $outline;
+    border-radius: 8px;
+    padding: 9px 35px 8px 35px;
+  }
+}
