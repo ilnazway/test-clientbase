@@ -118,13 +118,19 @@
   box-sizing: border-box;
   border: none;
   border-radius: 0;
-  line-height: 22px;
   &:focus {
     outline: none;
   }
   &_type_field {
     border: 1px solid $outline;
     border-radius: 8px;
-    padding: 9px 35px 8px 35px;
+  }
+}
+.label {
+  &_required {
+    &::after {
+      content: '*';
+      color: $base-red;
+    }
   }
 }

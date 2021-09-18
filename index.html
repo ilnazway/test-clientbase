@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1440, initial-scale=1.0" />
     <link href="scripts/swiper/css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/style.min.css" rel="stylesheet" />
     <title>Маркетплейс</title>
@@ -21,7 +21,19 @@
             </div>
             <nav class="navigate">
               <ul class="list navigate__list">
-                <li class="navigate__item"><a href="#" class="link link-nav navigate__link">О программе</a></li>
+                <li class="navigate__item">
+                  <a href="#" class="link link-nav navigate__link">О программе</a>
+                  <ul class="dropdown list text">
+                  <li class=""><a href="#" class="link">Сравнение версий</a></li>
+                  <li class=""><a href="#" class="link">О программе</a></li>
+                  <li class=""><a href="#" class="link">Купить</a></li>
+                  <li class=""><a href="#" class="link">Работа с претензиями</a></li>
+                  <li class=""><a href="#" class="link">Скачать</a></li>
+                  <li class=""><a href="#" class="link">Отзывы</a></li>
+                  <li class=""><a href="#" class="link">Создать аккаунт</a></li>
+                  <li class=""><a href="#" class="link">API</a></li>
+                </ul>
+                </li>
                 <li class="navigate__item"><a href="#" class="link link-nav navigate__link">Цены</a></li>
                 <li class="navigate__item"><a href="#" class="link link-nav_dedicated navigate__link navigate__courses-link">Курсы</a></li>
                 <li class="navigate__item"><a href="#" class="link link-nav navigate__link">Маркетплейс</a></li>
@@ -75,16 +87,16 @@
                         <img class="slider-content__img" src="img/slide_1.jpg" alt="slide image" />
                       </div>
                       <div class="slider-content__slide swiper-slide">
-                        <img class="slider-content__img" src="img/slide_1.jpg" alt="slide image" />
+                        <img class="slider-content__img" src="img/slide_2.jpg" alt="slide image" />
                       </div>
                       <div class="slider-content__slide swiper-slide">
-                        <img class="slider-content__img" src="img/slide_1.jpg" alt="slide image" />
+                        <img class="slider-content__img" src="img/slide_3.jpg" alt="slide image" />
                       </div>
                       <div class="slider-content__slide swiper-slide">
-                        <img class="slider-content__img" src="img/slide_1.jpg" alt="slide image" />
+                        <img class="slider-content__img" src="img/slide_4.jpg" alt="slide image" />
                       </div>
                       <div class="slider-content__slide swiper-slide">
-                        <img class="slider-content__img" src="img/slide_1.jpg" alt="slide image" />
+                        <img class="slider-content__img" src="img/slide_5.jpg" alt="slide image" />
                       </div>
                       <div class="slider-content__slide swiper-slide">
                         <img class="slider-content__img" src="img/slide_1.jpg" alt="slide image" />
@@ -96,21 +108,34 @@
 
                       <!-- If we need navigation buttons -->
                       <div class="slider-content__buttons">
-                      <div class="slider-content__button slider-content__button-prev">
-                        <svg class="slider-content__img-button button-prev__img" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M7 11L1.13923 6.81373C0.580879 6.41491 0.580878 5.58509 1.13923 5.18627L7 0.999999"
-                            stroke="#4A5568"
-                            stroke-linecap="round"
-                          />
-                        </svg>
-                      </div>
-                      <div class="slider-content__button slider-content__button-next">
-                        <svg class="slider-content__img-button button-next__img" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1 1L6.86077 5.18627C7.41912 5.58509 7.41912 6.41491 6.86077 6.81373L1 11" stroke="#4A5568" stroke-linecap="round" />
-                        </svg>
-                      </div>
-
+                        <div class="slider-content__button slider-content__button-prev">
+                          <svg
+                            class="slider-content__img-button button-prev__img"
+                            width="8"
+                            height="12"
+                            viewBox="0 0 8 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7 11L1.13923 6.81373C0.580879 6.41491 0.580878 5.58509 1.13923 5.18627L7 0.999999"
+                              stroke="#4A5568"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="slider-content__button slider-content__button-next">
+                          <svg
+                            class="slider-content__img-button button-next__img"
+                            width="8"
+                            height="12"
+                            viewBox="0 0 8 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M1 1L6.86077 5.18627C7.41912 5.58509 7.41912 6.41491 6.86077 6.81373L1 11" stroke="#4A5568" stroke-linecap="round" />
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -177,7 +202,7 @@
                       <div class="sidebar-card__title">
                         <h5 class="title title_size_s title_theme_sidebar">Аренда конфигурации</h5>
                       </div>
-                      <dl class="list-desc sidebar-card__list">
+                      <dl class="list-desc sidebar-card__list-rent">
                         <div class="sidebar-card__list-inner">
                           <dt class="list-desc__elem rent-config__definition">3 польз-ля</dt>
                           <dd class="list-desc__elem rent-config__meaning">1500 руб./месяц</dd>
@@ -206,20 +231,34 @@
                       <div class="sidebar-card__title">
                         <h5 class="title title_size_s title_theme_sidebar">Информация</h5>
                       </div>
-                      <dl class="list-desc sidebar-card__list">
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem info-config__definition">Код конфигурации:</dt>
-                          <dd class="list-desc__elem info-config__meaning">183</dd>
-                        </div>
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem info-config__definition">Опубликовано:</dt>
-                          <dd class="list-desc__elem info-config__meaning">15.06.2020</dd>
-                        </div>
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem info-config__definition">Версия:</dt>
-                          <dd class="list-desc__elem info-config__meaning">2387</dd>
-                        </div>
-                      </dl>
+                      <div class="sidebar-card__table">
+                        <table class="table-sidebar">
+                          <tr class="table-sidebar__row">
+                            <td class="table-sidebar__cell">Код конфигурации:</td>
+                            <td class="table-sidebar__cell">183</td>
+                          </tr>
+                          <tr class="table-sidebar__row">
+                            <td class="table-sidebar__cell">Обновления:</td>
+                            <td class="table-sidebar__cell">Есть</td>
+                          </tr>
+                          <tr class="table-sidebar__row">
+                            <td class="table-sidebar__cell">Техподдержка:</td>
+                            <td class="table-sidebar__cell">Разработчика</td>
+                          </tr>
+                          <tr class="table-sidebar__row">
+                            <td class="table-sidebar__cell">Опубликовано:</td>
+                            <td class="table-sidebar__cell">16.01.2014</td>
+                          </tr>
+                          <tr class="table-sidebar__row">
+                            <td class="table-sidebar__cell">Обновлено:</td>
+                            <td class="table-sidebar__cell">15.06.2020</td>
+                          </tr>
+                          <tr class="table-sidebar__row">
+                            <td class="table-sidebar__cell">Версия:</td>
+                            <td class="table-sidebar__cell">2387</td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
                   </div>
                   <div class="components__button">
@@ -230,7 +269,14 @@
                       <div class="sidebar-card__title">
                         <h5 class="title title_size_s title_theme_sidebar">Документация</h5>
                       </div>
-                      <div class="sidebar-card__list">проверка</div>
+                      <div class="sidebar-card__list">
+                        <div class="file-block text text_size_m">
+                          <a href="materials/Руководство пользователя.docx" class="file-block__link-inner" download>
+                            <div class="file-block__name">Руководство пользователя <span class="file-block__weight">(55кб)</span></div>
+                            <div class="file-block__date">от 21 ноября 2018</div>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="components__button components__button-demo">
@@ -336,25 +382,39 @@
             </div>
             <div class="content__form">
               <form class="form-content" action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" class="input input_type_field text text_size_m form-content__input" placeholder="Ваше ФИО*" />
-                <input type="tel" class="input input_type_field text text_size_m form-content__input" placeholder="Контактный E-mail*" />
-
-                <textarea
-                  name="description"
-                  class="input input_type_field text text_size_m form-content__textarea"
-                  placeholder="Опишите ваше предложение здесь*"
-                ></textarea>
+                <div class="form-content__input-group">
+                  <div class="field-content-form form-content__input">
+                    <input class="text text_size_m input input_type_field field-content-form__line" id="user-name" type="text" name="user-name" required />
+                    <label class="text text_size_m label_required field-content-form__label" for="user-name">Ваше ФИО</label>
+                  </div>
+                  <div class="field-content-form form-content__input">
+                    <input class="text text_size_m input input_type_field field-content-form__line" id="user-tel" type="tel" name="user-tel" required />
+                    <label class="text text_size_m label_required field-content-form__label" for="user-tel">Контактный E-mail</label>
+                  </div>
+                </div>
+                <div class="field-content-form form-content__textarea">
+                  <textarea
+                    class="text text_size_m input input_type_field field-content-form__line field-content-form__textarea"
+                    name="user-description"
+                    id="uesr-description"
+                    required
+                  ></textarea>
+                  <label class="text text_size_m label_required field-content-form__label" for="user-description">Опишите ваше предложение здесь</label>
+                </div>
                 <span class="text text_size_m form-content__text form-content__text-download">или загрузите файл</span>
-                <!-- юдок прикрепить бланк -->
+                <div class="field-content-form form-content__button-file">
+                  <input class="field-content-form__input-file" type="file" id="user-file" name="user-file" />
+                  <label class="field-content-form__button-file" for="user-file">
+                    <span class="text text_size_m field-content-form__button-file-text">Прикрепить файл</span>
+                  </label>
+                </div>
                 <span class="text text_size_m form-content__text-required"><span class="text_type_dedicated">*</span> - поле обязательное для заполнения </span>
-
                 <button class="button text text_size_m form-content__button">Отправить</button>
                 <span class="text text_size_m form-content__data-processing"
                   >Нажимая на кнопку, я соглашаюсь на <a href="#" class="link form-content__data-link">обработку персональных данных</a></span
                 >
               </form>
             </div>
-
             <div class="content__short-info">
               <div class="short-info">
                 <hr class="line short-info" />

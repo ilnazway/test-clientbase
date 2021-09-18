@@ -49,6 +49,7 @@
   }
   &__item {
     margin: 0 11px 0 11px;
+    position: relative;
   }
   &__link {
     padding: 5px 16px 5px 12px;
@@ -85,6 +86,10 @@
     transform: translateY(-50%);
   }
 }
+.dropdown {
+  position: absolute;
+}
+
 .create-acc {
   &__link {
     width: 197px;
@@ -194,6 +199,10 @@
     background: $background;
     text-align: center;
   }
+  &__img {
+    height: 320px;
+    max-width: 100%;
+  }
   &__navigate {
     min-height: 49px;
     position: relative;
@@ -243,7 +252,6 @@
 }
 .swiper-pagination-bullet-active {
   background: $base-red;
-
 }
 
 // info-content ===================================================================================================================================
@@ -267,7 +275,7 @@
 
 // sidebar ===================================================================================================================================
 .sidebar {
-  min-width: 355px;
+  width: 355px;
 }
 .components {
   &__rent {
@@ -305,21 +313,86 @@
     box-sizing: border-box;
     border: 1px solid $outline;
   }
+  &__list-rent {
+    padding: 22px 38px 26px 40px;
+  }
   &__list {
-    padding: 22px 16px 26px 16px;
+    padding: 24px 16px 26px 17px;
   }
   &__list-inner {
     display: flex;
     justify-content: space-between;
   }
+  &__table {
+    padding: 19px 15px 28px 15px;
+  }
 }
 .rent-config {
   &__definition {
-    flex-basis: 50%;
   }
   &__meaning {
-    flex-basis: 50%;
+    flex-basis: 46.487%;
+    flex-shrink: 0;
     color: $base-red;
+  }
+}
+// .info-config {
+//   &__definition {
+//     flex-basis: 0%;
+//   }
+//   &__meaning {
+//     flex-basis: 0%;
+//   }
+// }
+.table-sidebar {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font: inherit;
+  font-size: 16px;
+  line-height: 34px;
+  color: $text;
+  &__row > &__cell:last-child {
+    padding: 0 0 0 24px;
+    font-weight: 600;
+    color: $text-base;
+  }
+  &__row {
+    border-bottom: 2px solid transparent;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.file-block {
+  box-sizing: border-box;
+  line-height: 27px;
+  &__link-inner {
+    text-decoration: none;
+    color: $text;
+    display: inline-block;
+    padding: 0 0 0 60px;
+    position: relative;
+    &::before {
+      content: "";
+      background: url("../img/icon_doc-word.svg") center center no-repeat;
+      width: 38px;
+      height: 36px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__name {
+    color: #2f80ed;
+  }
+  &__weight {
+    color: $text;
+    font-weight: 300;
+  }
+  &__date {
+    font-weight: 300;
   }
 }
 // content ===================================================================================================================================
@@ -427,11 +500,16 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  &__input-group {
+    margin: 0 0 20px 0;
+  }
   &__input {
     margin: 0 0 14px 0;
+    &:last-child {
+      margin: 0;
+    }
   }
   &__textarea {
-    min-height: 100px;
     margin: 0 0 15px 0;
   }
   &__text {
@@ -439,6 +517,9 @@
   }
   &__text-download {
     margin: 0 0 22px 0;
+  }
+  &__button-file {
+    margin: 0 0 13px 0;
   }
   &__text-required {
     margin: 0 0 70px 0;
@@ -460,6 +541,49 @@
     text-decoration: underline;
   }
 }
+.field-content-form {
+  position: relative;
+  &__line {
+    color: #666666;
+    width: 100%;
+    padding: 9px 35px 8px 35px;
+    line-height: 22px;
+    &:focus + label {
+      display: none;
+    }
+  }
+  &__label {
+    color: #666666;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    line-height: 22px;
+    cursor: text;
+  }
+  &__textarea {
+    min-height: 100px;
+    max-width: 100%;
+  }
+  &__input-file {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+  &__button-file {
+    cursor: pointer;
+    display: flex;
+    max-width: 315px;
+    min-height: 50px;
+    border: 1px solid $base-red;
+    border-radius: 8px;
+  }
+  &__button-file-text {
+    color: $base-red;
+    line-height: 22px;
+    margin: auto;
+  }
+}
+
 // short-info ===================================================================================================================================
 
 .short-info {
@@ -585,6 +709,6 @@
 }
 .copyright-text {
   color: $text-base;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 28px;
 }
