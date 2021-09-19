@@ -1,0 +1,13 @@
+.js-lock {
+  overflow: hidden;
+}
+.js-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.js-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1440, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="scripts/swiper/css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/style.min.css" rel="stylesheet" />
     <title>Маркетплейс</title>
@@ -19,26 +19,59 @@
                 <img src="img/logo-text.svg" alt="клиентская база" class="img-text-logo logo__img-text" />
               </a>
             </div>
-            <nav class="navigate">
+            <div class="icon-menu">
+              <div class="icon-menu__inner">
+                <span></span>
+              </div>
+            </div>
+            <nav class="navigate menu__navigate">
               <ul class="list navigate__list">
                 <li class="navigate__item">
                   <a href="#" class="link link-nav navigate__link">О программе</a>
-                  <ul class="dropdown list text">
-                  <li class=""><a href="#" class="link">Сравнение версий</a></li>
-                  <li class=""><a href="#" class="link">О программе</a></li>
-                  <li class=""><a href="#" class="link">Купить</a></li>
-                  <li class=""><a href="#" class="link">Работа с претензиями</a></li>
-                  <li class=""><a href="#" class="link">Скачать</a></li>
-                  <li class=""><a href="#" class="link">Отзывы</a></li>
-                  <li class=""><a href="#" class="link">Создать аккаунт</a></li>
-                  <li class=""><a href="#" class="link">API</a></li>
-                </ul>
+                  <ul class="dropdown list text text_size_s">
+                    <li><a href="#" class="dropdown__link link">Сравнение версий</a></li>
+                    <li><a href="#" class="dropdown__link link">О программе</a></li>
+                    <li><a href="#" class="dropdown__link link">Купить</a></li>
+                    <li><a href="#" class="dropdown__link link">Работа с претензиями</a></li>
+                    <li><a href="#" class="dropdown__link link">Скачать</a></li>
+                    <li><a href="#" class="dropdown__link link">Отзывы</a></li>
+                    <li><a href="#" class="dropdown__link link">Создать аккаунт</a></li>
+                    <li><a href="#" class="dropdown__link link">API</a></li>
+                  </ul>
                 </li>
-                <li class="navigate__item"><a href="#" class="link link-nav navigate__link">Цены</a></li>
+                <li class="navigate__item">
+                  <a href="#" class="link link-nav navigate__link">Цены</a>
+                  <ul class="dropdown list text text_size_s">
+                    <li><a href="#" class="dropdown__link link">Аренда аккаунта</a></li>
+                    <li><a href="#" class="dropdown__link link">Покупка лицензии</a></li>
+                    <li><a href="#" class="dropdown__link link">Услуги по внедрению</a></li>
+                    <li><a href="#" class="dropdown__link link">CRM на заказ</a></li>
+                  </ul>
+                </li>
                 <li class="navigate__item"><a href="#" class="link link-nav_dedicated navigate__link navigate__courses-link">Курсы</a></li>
-                <li class="navigate__item"><a href="#" class="link link-nav navigate__link">Маркетплейс</a></li>
-                <li class="navigate__item"><a href="#" class="link link-nav navigate__link">Партнерам</a></li>
-                <li class="navigate__item"><a href="#" class="link link-nav navigate__link">Помощь</a></li>
+                <li class="navigate__item">
+                  <a href="#" class="link link-nav navigate__link">Маркетплейс</a>
+                  <ul class="dropdown list text text_size_s">
+                    <li><a href="#" class="dropdown__link link">Готовые решения</a></li>
+                    <li><a href="#" class="dropdown__link link">Дополнения</a></li>
+                  </ul>
+                </li>
+                <li class="navigate__item">
+                  <a href="#" class="link link-nav navigate__link">Партнерам</a>
+                  <ul class="dropdown list text text_size_s">
+                    <li><a href="#" class="dropdown__link link">Партнеры</a></li>
+                    <li><a href="#" class="dropdown__link link">Разработчики</a></li>
+                    <li><a href="#" class="dropdown__link link">Курс стартап-партнера</a></li>
+                  </ul>
+                </li>
+                <li class="navigate__item">
+                  <a href="#" class="link link-nav navigate__link">Помощь</a>
+                  <ul class="dropdown list text text_size_s">
+                    <li><a href="#" class="dropdown__link link">Заявка в техподдержку</a></li>
+                    <li><a href="#" class="dropdown__link link">Документация</a></li>
+                    <li><a href="#" class="dropdown__link link">Форум</a></li>
+                  </ul>
+                </li>
                 <li class="navigate__item">
                   <div class="telephone">
                     <a href="tel:+78001000936" class="link link-nav_dedicated telephone__link navigate__link">8 (800) 100-0936</a>
@@ -46,7 +79,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="create-acc">
+            <div class="create-acc menu__create-acc">
               <a href="#" class="link button create-acc__link">Создать аккаунт</a>
             </div>
           </div>
@@ -197,276 +230,288 @@
             <div class="container__sidebar">
               <aside class="sidebar">
                 <div class="components">
-                  <div class="component components__rent">
-                    <div class="sidebar-card">
-                      <div class="sidebar-card__title">
-                        <h5 class="title title_size_s title_theme_sidebar">Аренда конфигурации</h5>
-                      </div>
-                      <dl class="list-desc sidebar-card__list-rent">
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem rent-config__definition">3 польз-ля</dt>
-                          <dd class="list-desc__elem rent-config__meaning">1500 руб./месяц</dd>
+                  <div class="components__inner">
+                    <div class="component components__rent">
+                      <div class="sidebar-card">
+                        <div class="sidebar-card__title">
+                          <h5 class="title title_size_s title_theme_sidebar">Аренда конфигурации</h5>
                         </div>
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem rent-config__definition">7 польз-ля</dt>
-                          <dd class="list-desc__elem rent-config__meaning">2500 руб./месяц</dd>
-                        </div>
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem rent-config__definition">12 польз-ля</dt>
-                          <dd class="list-desc__elem rent-config__meaning">3000 руб./месяц</dd>
-                        </div>
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem rent-config__definition">25 польз-ля</dt>
-                          <dd class="list-desc__elem rent-config__meaning">5000 руб./месяц</dd>
-                        </div>
-                        <div class="sidebar-card__list-inner">
-                          <dt class="list-desc__elem rent-config__definition">Неограничено</dt>
-                          <dd class="list-desc__elem rent-config__meaning">7000 руб./ме</dd>
-                        </div>
-                      </dl>
-                    </div>
-                  </div>
-                  <div class="component components__info">
-                    <div class="sidebar-card">
-                      <div class="sidebar-card__title">
-                        <h5 class="title title_size_s title_theme_sidebar">Информация</h5>
-                      </div>
-                      <div class="sidebar-card__table">
-                        <table class="table-sidebar">
-                          <tr class="table-sidebar__row">
-                            <td class="table-sidebar__cell">Код конфигурации:</td>
-                            <td class="table-sidebar__cell">183</td>
-                          </tr>
-                          <tr class="table-sidebar__row">
-                            <td class="table-sidebar__cell">Обновления:</td>
-                            <td class="table-sidebar__cell">Есть</td>
-                          </tr>
-                          <tr class="table-sidebar__row">
-                            <td class="table-sidebar__cell">Техподдержка:</td>
-                            <td class="table-sidebar__cell">Разработчика</td>
-                          </tr>
-                          <tr class="table-sidebar__row">
-                            <td class="table-sidebar__cell">Опубликовано:</td>
-                            <td class="table-sidebar__cell">16.01.2014</td>
-                          </tr>
-                          <tr class="table-sidebar__row">
-                            <td class="table-sidebar__cell">Обновлено:</td>
-                            <td class="table-sidebar__cell">15.06.2020</td>
-                          </tr>
-                          <tr class="table-sidebar__row">
-                            <td class="table-sidebar__cell">Версия:</td>
-                            <td class="table-sidebar__cell">2387</td>
-                          </tr>
-                        </table>
+                        <dl class="list-desc sidebar-card__list-rent">
+                          <div class="sidebar-card__list-inner">
+                            <dt class="list-desc__elem rent-config__definition">3 польз-ля</dt>
+                            <dd class="list-desc__elem rent-config__meaning">1500 руб./месяц</dd>
+                          </div>
+                          <div class="sidebar-card__list-inner">
+                            <dt class="list-desc__elem rent-config__definition">7 польз-ля</dt>
+                            <dd class="list-desc__elem rent-config__meaning">2500 руб./месяц</dd>
+                          </div>
+                          <div class="sidebar-card__list-inner">
+                            <dt class="list-desc__elem rent-config__definition">12 польз-ля</dt>
+                            <dd class="list-desc__elem rent-config__meaning">3000 руб./месяц</dd>
+                          </div>
+                          <div class="sidebar-card__list-inner">
+                            <dt class="list-desc__elem rent-config__definition">25 польз-ля</dt>
+                            <dd class="list-desc__elem rent-config__meaning">5000 руб./месяц</dd>
+                          </div>
+                          <div class="sidebar-card__list-inner">
+                            <dt class="list-desc__elem rent-config__definition">Неограничено</dt>
+                            <dd class="list-desc__elem rent-config__meaning">7000 руб./ме</dd>
+                          </div>
+                        </dl>
                       </div>
                     </div>
                   </div>
-                  <div class="components__button">
-                    <button class="button component__button">Скачать</button>
-                  </div>
-                  <div class="component components__documentation">
-                    <div class="sidebar-card">
-                      <div class="sidebar-card__title">
-                        <h5 class="title title_size_s title_theme_sidebar">Документация</h5>
-                      </div>
-                      <div class="sidebar-card__list">
-                        <div class="file-block text text_size_m">
-                          <a href="materials/Руководство пользователя.docx" class="file-block__link-inner" download>
-                            <div class="file-block__name">Руководство пользователя <span class="file-block__weight">(55кб)</span></div>
-                            <div class="file-block__date">от 21 ноября 2018</div>
-                          </a>
+                  <div class="components__inner">
+                    <div class="component components__info">
+                      <div class="sidebar-card">
+                        <div class="sidebar-card__title">
+                          <h5 class="title title_size_s title_theme_sidebar">Информация</h5>
+                        </div>
+                        <div class="sidebar-card__table">
+                          <table class="table-sidebar">
+                            <tr class="table-sidebar__row">
+                              <td class="table-sidebar__cell">Код конфигурации:</td>
+                              <td class="table-sidebar__cell">183</td>
+                            </tr>
+                            <tr class="table-sidebar__row">
+                              <td class="table-sidebar__cell">Обновления:</td>
+                              <td class="table-sidebar__cell">Есть</td>
+                            </tr>
+                            <tr class="table-sidebar__row">
+                              <td class="table-sidebar__cell">Техподдержка:</td>
+                              <td class="table-sidebar__cell">Разработчика</td>
+                            </tr>
+                            <tr class="table-sidebar__row">
+                              <td class="table-sidebar__cell">Опубликовано:</td>
+                              <td class="table-sidebar__cell">16.01.2014</td>
+                            </tr>
+                            <tr class="table-sidebar__row">
+                              <td class="table-sidebar__cell">Обновлено:</td>
+                              <td class="table-sidebar__cell">15.06.2020</td>
+                            </tr>
+                            <tr class="table-sidebar__row">
+                              <td class="table-sidebar__cell">Версия:</td>
+                              <td class="table-sidebar__cell">2387</td>
+                            </tr>
+                          </table>
                         </div>
                       </div>
                     </div>
+                    <div class="components__button">
+                      <button class="button component__button">Скачать</button>
+                    </div>
                   </div>
-                  <div class="components__button components__button-demo">
-                    <button class="button button_theme_empty component__button">Смотреть демо</button>
-                  </div>
-                  <div class="components__button components__button-demo">
-                    <button class="button button_theme_empty component__button">Смотреть видео</button>
+                  <div class="components__inner">
+                    <div class="component components__documentation">
+                      <div class="sidebar-card">
+                        <div class="sidebar-card__title">
+                          <h5 class="title title_size_s title_theme_sidebar">Документация</h5>
+                        </div>
+                        <div class="sidebar-card__list">
+                          <div class="file-block text text_size_m">
+                            <a href="materials/Руководство пользователя.docx" class="file-block__link-inner" download>
+                              <div class="file-block__name">Руководство пользователя <span class="file-block__weight">(55кб)</span></div>
+                              <div class="file-block__date">от 21 ноября 2018</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="components__button components__button-demo">
+                      <button class="button button_theme_empty component__button">Смотреть демо</button>
+                    </div>
+                    <div class="components__button components__button-demo">
+                      <button class="button button_theme_empty component__button">Смотреть видео</button>
+                    </div>
                   </div>
                 </div>
               </aside>
             </div>
           </div>
-          <div class="content">
-            <div class="content__table-history">
-              <div class="table-history">
-                <h5 class="title title_size_m table-history__title">История изменений</h5>
-                <div class="table-history__inner">
-                  <div class="table-history__title-wrap">
-                    <div class="table-history__row">
-                      <div class="title title_size_s title_theme_table table-history__elem table-history__revision table-history__revision-title">Ревизия</div>
-                      <div class="title title_size_s title_theme_table table-history__elem table-history__date table-history__date-title">Дата</div>
-                      <div class="title title_size_s title_theme_table table-history__elem table-history__new table-history__new-title">Что нового</div>
+          <div class="container__box">
+            <div class="content">
+              <div class="content__table-history">
+                <div class="table-history">
+                  <h5 class="title title_size_m table-history__title">История изменений</h5>
+                  <div class="table-history__inner">
+                    <div class="table-history__title-wrap">
+                      <div class="table-history__row">
+                        <div class="title title_size_s title_theme_table table-history__elem table-history__revision table-history__revision-title">
+                          Ревизия
+                        </div>
+                        <div class="title title_size_s title_theme_table table-history__elem table-history__date table-history__date-title">Дата</div>
+                        <div class="title title_size_s title_theme_table table-history__elem table-history__new table-history__new-title">Что нового</div>
+                      </div>
                     </div>
-                  </div>
-                  <hr class="line" />
-                  <div class="table-history__descriptions">
-                    <div class="table-history__row">
-                      <div class="table-history__elem table-history__revision">2387</div>
-                      <div class="table-history__elem table-history__date">15.06.20</div>
-                      <div class="table-history__elem table-history__new">Исправлено отображение подтаблиц с позициями приходов и расходов</div>
-                    </div>
-                    <div class="table-history__row">
-                      <div class="table-history__elem table-history__revision">2387</div>
-                      <div class="table-history__elem table-history__date">15.06.20</div>
-                      <div class="table-history__elem table-history__new">Исправлено отображение подтаблиц с позициями приходов и</div>
-                    </div>
-                    <div class="table-history__row">
-                      <div class="table-history__elem table-history__revision">2387</div>
-                      <div class="table-history__elem table-history__date">15.06.20</div>
-                      <div class="table-history__elem table-history__new">Исправлено автонумерация приходов и расходов</div>
-                    </div>
-                    <div class="table-history__row">
-                      <div class="table-history__elem table-history__revision">2387</div>
-                      <div class="table-history__elem table-history__date">15.06.20</div>
-                      <div class="table-history__elem table-history__new">Исправлено отображение подтаблиц с позициями приходов и</div>
-                    </div>
-                    <div class="table-history__row">
-                      <div class="table-history__elem table-history__revision">2387</div>
-                      <div class="table-history__elem table-history__date">15.06.20</div>
-                      <div class="table-history__elem table-history__new">Добавлено ДД “Сформировать раасход” в таблице Счета</div>
-                    </div>
-                    <div class="table-history__row">
-                      <div class="table-history__elem table-history__revision">2387</div>
-                      <div class="table-history__elem table-history__date">15.06.20</div>
-                      <div class="table-history__elem table-history__new">
-                        Исправлено отображение подтаблиц с позициями приходов и расходовИсправлено отображение подтаблиц с позициями приходов и
-                        расходовИсправлено отображение подтаблиц с позициями приходов и расходов
+                    <hr class="line" />
+                    <div class="table-history__descriptions">
+                      <div class="table-history__row">
+                        <div class="table-history__elem table-history__revision">2387</div>
+                        <div class="table-history__elem table-history__date">15.06.20</div>
+                        <div class="table-history__elem table-history__new">Исправлено отображение подтаблиц с позициями приходов и расходов</div>
+                      </div>
+                      <div class="table-history__row">
+                        <div class="table-history__elem table-history__revision">2387</div>
+                        <div class="table-history__elem table-history__date">15.06.20</div>
+                        <div class="table-history__elem table-history__new">Исправлено отображение подтаблиц с позициями приходов и</div>
+                      </div>
+                      <div class="table-history__row">
+                        <div class="table-history__elem table-history__revision">2387</div>
+                        <div class="table-history__elem table-history__date">15.06.20</div>
+                        <div class="table-history__elem table-history__new">Исправлено автонумерация приходов и расходов</div>
+                      </div>
+                      <div class="table-history__row">
+                        <div class="table-history__elem table-history__revision">2387</div>
+                        <div class="table-history__elem table-history__date">15.06.20</div>
+                        <div class="table-history__elem table-history__new">Исправлено отображение подтаблиц с позициями приходов и</div>
+                      </div>
+                      <div class="table-history__row">
+                        <div class="table-history__elem table-history__revision">2387</div>
+                        <div class="table-history__elem table-history__date">15.06.20</div>
+                        <div class="table-history__elem table-history__new">Добавлено ДД “Сформировать раасход” в таблице Счета</div>
+                      </div>
+                      <div class="table-history__row">
+                        <div class="table-history__elem table-history__revision">2387</div>
+                        <div class="table-history__elem table-history__date">15.06.20</div>
+                        <div class="table-history__elem table-history__new">
+                          Исправлено отображение подтаблиц с позициями приходов и расходовИсправлено отображение подтаблиц с позициями приходов и
+                          расходовИсправлено отображение подтаблиц с позициями приходов и расходов
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="content__reviews">
-              <div class="reviews">
-                <div class="reviews__row">
-                  <div class="reviews__head">
-                    <h5 class="title title_size_m">Отзывы</h5>
-                    <button class="button text text_size_m reviews__button">Оставить отзыв</button>
-                  </div>
-                </div>
-                <div class="reviews__row">
-                  <div class="review">
-                    <div class="text text_size_m review__user-name">Rushan</div>
-                    <div class="review__info">
-                      <div class="text text_size_s review__date">05/09/2016</div>
-                      <div class="review__rating">
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                      </div>
+              <div class="content__reviews">
+                <div class="reviews">
+                  <div class="reviews__row">
+                    <div class="reviews__head">
+                      <h5 class="title title_size_m">Отзывы</h5>
+                      <button class="button text text_size_m reviews__button">Оставить отзыв</button>
                     </div>
-                    <p class="text text_size_m review__user-text">Удобная программа, легкая в настройке, пользуемся уже пол года</p>
                   </div>
-                  <div class="review">
-                    <div class="text text_size_m review__user-name">Rushan</div>
-                    <div class="review__info">
-                      <div class="text text_size_s review__date">05/09/2016</div>
-                      <div class="review__rating">
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
-                        <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                  <div class="reviews__row">
+                    <div class="review">
+                      <div class="text text_size_m review__user-name">Rushan</div>
+                      <div class="review__info">
+                        <div class="text text_size_s review__date">05/09/2016</div>
+                        <div class="review__rating">
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                        </div>
                       </div>
+                      <p class="text text_size_m review__user-text">Удобная программа, легкая в настройке, пользуемся уже пол года</p>
                     </div>
-                    <p class="text text_size_m review__user-text">Удобная программа, легкая в настройке, пользуемся уже пол года</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="content__form">
-              <form class="form-content" action="https://echo.htmlacademy.ru" method="post">
-                <div class="form-content__input-group">
-                  <div class="field-content-form form-content__input">
-                    <input class="text text_size_m input input_type_field field-content-form__line" id="user-name" type="text" name="user-name" required />
-                    <label class="text text_size_m label_required field-content-form__label" for="user-name">Ваше ФИО</label>
-                  </div>
-                  <div class="field-content-form form-content__input">
-                    <input class="text text_size_m input input_type_field field-content-form__line" id="user-tel" type="tel" name="user-tel" required />
-                    <label class="text text_size_m label_required field-content-form__label" for="user-tel">Контактный E-mail</label>
-                  </div>
-                </div>
-                <div class="field-content-form form-content__textarea">
-                  <textarea
-                    class="text text_size_m input input_type_field field-content-form__line field-content-form__textarea"
-                    name="user-description"
-                    id="uesr-description"
-                    required
-                  ></textarea>
-                  <label class="text text_size_m label_required field-content-form__label" for="user-description">Опишите ваше предложение здесь</label>
-                </div>
-                <span class="text text_size_m form-content__text form-content__text-download">или загрузите файл</span>
-                <div class="field-content-form form-content__button-file">
-                  <input class="field-content-form__input-file" type="file" id="user-file" name="user-file" />
-                  <label class="field-content-form__button-file" for="user-file">
-                    <span class="text text_size_m field-content-form__button-file-text">Прикрепить файл</span>
-                  </label>
-                </div>
-                <span class="text text_size_m form-content__text-required"><span class="text_type_dedicated">*</span> - поле обязательное для заполнения </span>
-                <button class="button text text_size_m form-content__button">Отправить</button>
-                <span class="text text_size_m form-content__data-processing"
-                  >Нажимая на кнопку, я соглашаюсь на <a href="#" class="link form-content__data-link">обработку персональных данных</a></span
-                >
-              </form>
-            </div>
-            <div class="content__short-info">
-              <div class="short-info">
-                <hr class="line short-info" />
-                <div class="short-info__inner">
-                  <div class="short-info__publication-date publication-date">
-                    <p class="text text_size_m publication-date__text">Дата публикации <span class="publication-date__main">22.07.2021</span></p>
-                  </div>
-                  <div class="short-info__grade-article grade-article">
-                    <span class="text text_size_m grade-article__text">Понравилась статья ?</span>
-                    <div class="grade-article__emotion">
-                      <div class="emotion emotion__bad">
-                        <svg class="emotion__img" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="11.9494" cy="12.75" rx="11.9494" ry="12" fill="#E63756" />
-                          <path
-                            d="M8.96191 18.75V18.75C10.6705 17.2486 13.228 17.2486 14.9366 18.75V18.75"
-                            stroke="#F7FAFC"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                          />
-                          <path d="M8.96219 8.25C8.74881 8.5 8.00197 9 6.72168 9" stroke="#F7FAFC" stroke-width="2" stroke-linecap="round" />
-                          <rect width="2.2405" height="3" rx="1.12025" transform="matrix(-1 0 0 1 17.1772 10.5)" fill="#F7FAFC" />
-                          <rect width="2.24051" height="3" rx="1.12025" transform="matrix(-1 0 0 1 8.96216 10.5)" fill="#F7FAFC" />
-                          <path d="M14.9367 8.25C15.1501 8.5 15.897 9 17.1772 9" stroke="#F7FAFC" stroke-width="2" stroke-linecap="round" />
-                        </svg>
+                    <div class="review">
+                      <div class="text text_size_m review__user-name">Rushan</div>
+                      <div class="review__info">
+                        <div class="text text_size_s review__date">05/09/2016</div>
+                        <div class="review__rating">
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                          <img src="img/review-star.svg" alt="star" class="review__img-star" />
+                        </div>
                       </div>
-                      <div class="emotion emotion__normally">
-                        <svg class="emotion__img" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="12.2658" cy="12.75" rx="11.9494" ry="12" fill="#E6ECF1" />
-                          <path d="M9.27832 18H15.253" stroke="#919CA5" stroke-width="2" stroke-linecap="round" />
-                          <rect x="7.03809" y="9" width="2.24051" height="3.75" rx="1.12025" fill="#919CA5" />
-                          <rect x="15.2529" y="9" width="2.24051" height="3.75" rx="1.12026" fill="#919CA5" />
-                        </svg>
-                      </div>
-                      <div class="emotion emotion__good">
-                        <svg class="emotion__img" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="12.0885" cy="12.75" rx="11.9494" ry="12" fill="#E6ECF1" />
-                          <path d="M6.86084 9.75V9.75C7.42002 9.00127 8.54217 9.00127 9.10134 9.75V9.75" stroke="#919CA5" stroke-linecap="round" />
-                          <path d="M15.0762 9.75V9.75C15.6353 9.00127 16.7575 9.00127 17.3167 9.75V9.75" stroke="#919CA5" stroke-linecap="round" />
-                          <path
-                            d="M12.0885 20.25C8.90802 20.25 6.11377 18.1466 6.11377 15.5518C6.11377 14.3291 7.19884 13.3778 8.43954 13.5128L9.8104 13.662C11.3244 13.8268 12.8525 13.8268 14.3665 13.662L15.7374 13.5128C16.9781 13.3778 18.0631 14.3291 18.0631 15.5518C18.0631 18.1466 15.2689 20.25 12.0885 20.25Z"
-                            fill="#919CA5"
-                          />
-                        </svg>
-                      </div>
+                      <p class="text text_size_m review__user-text">Удобная программа, легкая в настройке, пользуемся уже пол года</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- <div class="content__comments">
+              <div class="content__form">
+                <form class="form-content" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="form-content__input-group">
+                    <div class="field-content-form form-content__input">
+                      <input class="text text_size_m input input_type_field field-content-form__line" id="user-name" type="text" name="user-name" required />
+                      <label class="text text_size_m label_required field-content-form__label" for="user-name">Ваше ФИО</label>
+                    </div>
+                    <div class="field-content-form form-content__input">
+                      <input class="text text_size_m input input_type_field field-content-form__line" id="user-tel" type="tel" name="user-tel" required />
+                      <label class="text text_size_m label_required field-content-form__label" for="user-tel">Контактный E-mail</label>
+                    </div>
+                  </div>
+                  <div class="field-content-form form-content__textarea">
+                    <textarea
+                      class="text text_size_m input input_type_field field-content-form__line field-content-form__textarea"
+                      name="user-description"
+                      id="uesr-description"
+                      required
+                    ></textarea>
+                    <label class="text text_size_m label_required field-content-form__label" for="user-description">Опишите ваше предложение здесь</label>
+                  </div>
+                  <span class="text text_size_m form-content__text form-content__text-download">или загрузите файл</span>
+                  <div class="field-content-form form-content__button-file">
+                    <input class="field-content-form__input-file" type="file" id="user-file" name="user-file" />
+                    <label class="field-content-form__button-file" for="user-file">
+                      <span class="text text_size_m field-content-form__button-file-text">Прикрепить файл</span>
+                    </label>
+                  </div>
+                  <span class="text text_size_m form-content__text-required"
+                    ><span class="text_type_dedicated">*</span> - поле обязательное для заполнения
+                  </span>
+                  <button class="button text text_size_m form-content__button">Отправить</button>
+                  <span class="text text_size_m form-content__data-processing"
+                    >Нажимая на кнопку, я соглашаюсь на <a href="#" class="link form-content__data-link">обработку персональных данных</a></span
+                  >
+                </form>
+              </div>
+              <div class="content__short-info">
+                <div class="short-info">
+                  <hr class="line short-info" />
+                  <div class="short-info__inner">
+                    <div class="short-info__publication-date publication-date">
+                      <p class="text text_size_m publication-date__text">Дата публикации <span class="publication-date__main">22.07.2021</span></p>
+                    </div>
+                    <div class="short-info__grade-article grade-article">
+                      <span class="text text_size_m grade-article__text">Понравилась статья ?</span>
+                      <div class="grade-article__emotion">
+                        <div class="emotion emotion__bad">
+                          <svg class="emotion__img" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="11.9494" cy="12.75" rx="11.9494" ry="12" fill="#E63756" />
+                            <path
+                              d="M8.96191 18.75V18.75C10.6705 17.2486 13.228 17.2486 14.9366 18.75V18.75"
+                              stroke="#F7FAFC"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <path d="M8.96219 8.25C8.74881 8.5 8.00197 9 6.72168 9" stroke="#F7FAFC" stroke-width="2" stroke-linecap="round" />
+                            <rect width="2.2405" height="3" rx="1.12025" transform="matrix(-1 0 0 1 17.1772 10.5)" fill="#F7FAFC" />
+                            <rect width="2.24051" height="3" rx="1.12025" transform="matrix(-1 0 0 1 8.96216 10.5)" fill="#F7FAFC" />
+                            <path d="M14.9367 8.25C15.1501 8.5 15.897 9 17.1772 9" stroke="#F7FAFC" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                        </div>
+                        <div class="emotion emotion__normally">
+                          <svg class="emotion__img" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="12.2658" cy="12.75" rx="11.9494" ry="12" fill="#E6ECF1" />
+                            <path d="M9.27832 18H15.253" stroke="#919CA5" stroke-width="2" stroke-linecap="round" />
+                            <rect x="7.03809" y="9" width="2.24051" height="3.75" rx="1.12025" fill="#919CA5" />
+                            <rect x="15.2529" y="9" width="2.24051" height="3.75" rx="1.12026" fill="#919CA5" />
+                          </svg>
+                        </div>
+                        <div class="emotion emotion__good">
+                          <svg class="emotion__img" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="12.0885" cy="12.75" rx="11.9494" ry="12" fill="#E6ECF1" />
+                            <path d="M6.86084 9.75V9.75C7.42002 9.00127 8.54217 9.00127 9.10134 9.75V9.75" stroke="#919CA5" stroke-linecap="round" />
+                            <path d="M15.0762 9.75V9.75C15.6353 9.00127 16.7575 9.00127 17.3167 9.75V9.75" stroke="#919CA5" stroke-linecap="round" />
+                            <path
+                              d="M12.0885 20.25C8.90802 20.25 6.11377 18.1466 6.11377 15.5518C6.11377 14.3291 7.19884 13.3778 8.43954 13.5128L9.8104 13.662C11.3244 13.8268 12.8525 13.8268 14.3665 13.662L15.7374 13.5128C16.9781 13.3778 18.0631 14.3291 18.0631 15.5518C18.0631 18.1466 15.2689 20.25 12.0885 20.25Z"
+                              fill="#919CA5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="content__comments">
               <div class="comments">Здесь вставляется плагин от вконтактедля комментариев</div>
             </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -502,7 +547,7 @@
                 </ul>
               </div>
               <div class="footer-navigate__column">
-                <a href="#" class="link title title_size_s footer-navigate__but-link">Персональный <br />проект</a>
+                <a href="#" class="link title title_size_s footer-navigate__but-link">Персональный проект</a>
                 <ul class="list text footer-navigate__list">
                   <li class="footer-navigate__item"><a href="#" class="link footer-navigate__link">Магазин готовых решений</a></li>
                   <li class="footer-navigate__item"><a href="#" class="link footer-navigate__link">Описание</a></li>
